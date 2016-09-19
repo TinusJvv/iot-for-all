@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="./stylesheets/jquery-ui.css" rel="stylesheet">
+	<link href="./stylesheets/jquery.iot-1.0.0.css" rel="stylesheet">
+
+	<script type="text/javascript" src="./javascripts/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="./javascripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./javascripts/jquery-ui.iot-1.0.0.js"></script>
+</head>
+<body>
+ <!--Buttons -->
+<div class="panel-outer">
+	<div class="panel-inner">
+		<h1 class="panel-header-raised blue">Control buttons and indication</h1>
+		<div class="panel-group clearfix">
+			<div>
+				<div class="togglebutton float-left" id="iot_togglebutton-1"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-11"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-21"></div>
+			</div>
+			<div>
+				<div class="togglebutton float-left" id="iot_togglebutton-2"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-12"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-22"></div>
+			</div>
+			<div>
+				<div class="togglebutton float-left" id="iot_togglebutton-3"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-13"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-23"></div>
+			</div>
+			<div>
+				<div class="togglebutton float-left" id="iot_togglebutton-4"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-14"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-24"></div>
+			</div>
+			<div>
+				<div class="togglebutton float-left" id="iot_togglebutton-5"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-15"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-25"></div>
+			</div>
+			<div>
+				<div class="togglebutton float-left" id="iot_togglebutton-6"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-16"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-26"></div>
+			</div>
+			<div>
+				<div class="togglebutton float-left" id="iot_togglebutton-7"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-17"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-27"></div>
+			</div>
+			<div>
+				<div class="togglebutton float-left" id="iot_togglebutton-8"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-18"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-28"></div>
+			</div>
+			<div>
+				<div class="togglebutton float-left" id="iot_togglebutton-9"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-19"></div>
+				<div class="togglebutton float-left" id="iot_togglebutton-29"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+$('#iot_togglebutton-1').control({label: 'Type 1', type: './images/control/type1', onimage: '_blue', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-2').control({label: 'Type 2', type: './images/control/type2', onimage: '_blue', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-3').control({label: 'Type 3', type: './images/control/type3', onimage: '_blue', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-4').control({label: 'Type 4', type: './images/control/type4', onimage: '_blue', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-5').control({label: 'Type 5', type: './images/control/type5', onimage: '_blue', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-6').control({label: 'Type 6', type: './images/control/type6', onimage: '_blue', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-7').control({label: 'Type 7', type: './images/control/type7_blue', onimage: '_on', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '200px', toggle: true});
+$('#iot_togglebutton-8').control({label: 'Type 8', type: './images/control/type8_blue', onimage: '_on', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '200px', toggle: true});
+$('#iot_togglebutton-9').control({label: 'Type 9', type: './images/control/type9', onimage: '_blue', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '200px'});
+
+$('#iot_togglebutton-11').control({label: 'Type 1', type: './images/control/type1', onimage: '_red', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-12').control({label: 'Type 2', type: './images/control/type2', onimage: '_red', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-13').control({label: 'Type 3', type: './images/control/type3', onimage: '_red', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-14').control({label: 'Type 4', type: './images/control/type4', onimage: '_red', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-15').control({label: 'Type 5', type: './images/control/type5', onimage: '_red', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-16').control({label: 'Type 6', type: './images/control/type6', onimage: '_red', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-17').control({label: 'Type 7', type: './images/control/type7_red', onimage: '_on', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '200px', toggle: true});
+$('#iot_togglebutton-18').control({label: 'Type 8', type: './images/control/type8_red', onimage: '_on', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '200px', toggle: true});
+$('#iot_togglebutton-19').control({label: 'Type 9', type: './images/control/type9', onimage: '_red', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '200px'});
+
+$('#iot_togglebutton-21').control({label: 'Type 1', type: './images/control/type1', onimage: '_green', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-22').control({label: 'Type 2', type: './images/control/type2', onimage: '_green', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-23').control({label: 'Type 3', type: './images/control/type3', onimage: '_green', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-24').control({label: 'Type 4', type: './images/control/type4', onimage: '_green', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-25').control({label: 'Type 5', type: './images/control/type5', onimage: '_green', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-26').control({label: 'Type 6', type: './images/control/type6', onimage: '_green', offimage: '_off', imgheight: '50px', imgwidth: '50px', width: '200px', toggle: true});
+$('#iot_togglebutton-27').control({label: 'Type 7', type: './images/control/type7_green', onimage: '_on', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '200px', toggle: true});
+$('#iot_togglebutton-28').control({label: 'Type 8', type: './images/control/type8_green', onimage: '_on', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '200px', toggle: true});
+$('#iot_togglebutton-29').control({label: 'Type 9', type: './images/control/type9', onimage: '_green', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '200px'});
+
+$('.togglebutton').on("onchange", function(event, val) {
+	console.log(val);
+});
+ </script>
+  <!--Indication -->
+<div class="panel-outer">
+	<div class="panel-inner">
+		<h1 class="panel-header-raised blue">Control buttons and indication</h1>
+		<div class="panel-group clearfix">
+			<div class="indication" id="iot_indication-1"></div>
+			<div class="indication" id="iot_indication-2"></div>
+			<div class="indication" id="iot_indication-3"></div>
+			<div class="indication" id="iot_indication-4"></div>
+			<div class="indication" id="iot_indication-5"></div>
+			<div class="indication" id="iot_indication-6"></div>
+			<a id="on1">On</a> | <a id="off1">Off</a>
+		</div>
+	</div>
+</div>
+<script>
+$('#iot_indication-1').control({label: 'Type 8 Blue Toggle false', type: './images/control/type8_blue', onimage: '_on', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '300px', toggle: false});
+$('#iot_indication-2').control({label: 'Type 8 Cyan', type: './images/control/type8_cyan', onimage: '_on', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '300px'});
+$('#iot_indication-3').control({label: 'Type 8 Green', type: './images/control/type8_green', onimage: '_on', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '300px'});
+$('#iot_indication-4').control({label: 'Type 8 Magentha', type: './images/control/type8_magentha', onimage: '_on', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '300px'});
+$('#iot_indication-5').control({label: 'Type 8 Red', type: './images/control/type8_red', onimage: '_on', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '300px'});
+$('#iot_indication-6').control({label: 'Type 8 Yellow', type: './images/control/type8_yellow', onimage: '_on', offimage: '_off', imgheight: '50px', imgwidth: '100px', width: '300px'});
+
+$('.indication').on("onchange", function(event, val) {
+	console.log(val);
+});
+
+$("#on1").click(function() {
+	$('#iot_indication-1').control('set', true);
+});
+
+$("#off1").click(function() {
+	$('#iot_indication-1').control('set', false);
+});	
+</script>
+<!--Progress bars -->
+<div class="panel-outer">
+	<div class="panel-inner">
+		<h1 class="panel-header-raised blue">Vertical progress bars</h1>
+		<div class="panel-group clearfix">
+			<div class="float-left bevel-down2" id="iot_progress-1"></div>
+			<div class="float-left bevel-down2" id="iot_progress-2"></div>
+			<div class="float-left bevel-down2" id="iot_progress-3"></div>
+		</div>
+	</div>
+</div>
+<script>
+$('#iot_progress-1').progressbar({value: 25, orientation: 'vertical'});
+$('#iot_progress-2').progressbar({value: 50,orientation: 'vertical'});
+$('#iot_progress-3').progressbar({value: 75, orientation: 'vertical', animate: false});
+ </script>
+ <div class="panel-outer">
+	<div class="panel-inner">
+	<h1 class="panel-header-raised blue">Horizontal progress bars</h1>
+		<div class="panel-group clearfix">
+			<div class="bevel-down2" id="iot_progress-4"></div>
+			<a id="res2">Down</a> | <a id="res1">Up</a>
+		</div>
+	</div>
+</div>
+<script>
+var varBar = 50;
+$('#iot_progress-4').progressbar({value: varBar, orientation: 'horizontal', speed: 200});
+
+$("#res1").click(function() {
+	varBar = varBar + 5;
+	if(varBar > 100) {varBar = 100;}
+	$('#iot_progress-4').progressbar('update', varBar);
+});
+
+$("#res2").click(function() {
+	varBar = varBar - 5;
+	if(varBar < 0) {varBar = 0;}
+	$('#iot_progress-4').progressbar('update', varBar);
+});	
+ </script>
+<!--Limit Progress bars -->
+<div class="panel-outer">
+	<div class="panel-inner">
+		<h1 class="panel-header-raised blue">Limit Vertical progress bars</h1>
+		<div class="panel-group clearfix">
+				<div id="iot_limitprogress-1"></div>
+				<div id="iot_limitprogress-2"></div>
+				<div id="iot_limitprogress-3"></div>
+				<a id="down5">Down</a> | <a id="up5">Up</a>
+		</div>
+	</div>
+</div>
+<script>
+var varBar5 = 50;
+$('#iot_limitprogress-1').limitprogressbar({label:'Test 1', units: "mm", max: 150, value: varBar5, orientation: 'vertical', lmin: 30, lmax: 70, hmin: 80, hmax: 100});
+$('#iot_limitprogress-2').limitprogressbar({label:'Test 2', value: 50,orientation: 'vertical', lmin: 10, lmax: 75, hmin: 5, hmax: 80});
+$('#iot_limitprogress-3').limitprogressbar({label:'Test 3', value: 75, orientation: 'vertical', animate: false, lmin: 10, lmax: 30, hmin: 5, hmax: 35});
+
+$("#up5").click(function() {
+	varBar5 = varBar5 + 10;
+	$('#iot_limitprogress-1').limitprogressbar('update', varBar5);
+});
+
+$("#down5").click(function() {
+	varBar5 = varBar5 - 10;
+	$('#iot_limitprogress-1').limitprogressbar('update', varBar5);
+});	
+</script>
+<!--Limit Progress bars -->
+<div class="panel-outer">
+	<div class="panel-inner">
+		<h1 class="panel-header-raised blue">Limit Horizontal progress bars</h1>
+		<div class="panel-group clearfix">
+				<div id="iot_limitprogress-4"></div>
+				<div id="iot_limitprogress-5"></div>
+				<div id="iot_limitprogress-6"></div>
+				<a id="down6">Down</a> | <a id="up6">Up</a>
+		</div>
+	</div>
+</div>
+<script>
+var varBar6 = 50;
+$('#iot_limitprogress-4').limitprogressbar({label:'Test 1', units: "mm", max: 150, value: varBar6, orientation: 'horizontal', lmin: 30, lmax: 70, hmin: 80, hmax: 100});
+$('#iot_limitprogress-5').limitprogressbar({label:'Test 2', value: 50,orientation: 'horizontal', lmin: 10, lmax: 75, hmin: 5, hmax: 80});
+$('#iot_limitprogress-6').limitprogressbar({label:'Test 3', value: 75, orientation: 'horizontal', animate: false, lmin: 10, lmax: 30, hmin: 5, hmax: 35});
+
+$("#up6").click(function() {
+	varBar6 = varBar6 + 10;
+	$('#iot_limitprogress-4').limitprogressbar('update', varBar6);
+});
+
+$("#down6").click(function() {
+	varBar6 = varBar6 - 10;
+	$('#iot_limitprogress-4').limitprogressbar('update', varBar6);
+});	
+</script>
+<!-- Message display -->
+<div class="panel-outer">
+	<div class="panel-inner">
+		<h1 class="panel-header-raised blue">Message display's</h1>
+		<div class="panel-group">
+				<div id="iot_message-1"></div>
+				<div id="iot_message-2"></div>
+				<div id="iot_message-3"></div>
+				<div id="iot_message-4"></div>
+				<a id="chan1">On</a> | <a id="chan2">Off</a>
+		</div>
+	</div>
+</div>
+<script>
+
+$('#iot_message-1').messagedisplay({type:'blue', message: "Blue message", textheight: "20px", width: '50%', status: true});
+$('#iot_message-2').messagedisplay({type:'red', message: "Red message", textheight: "20px", width: 'auto'});
+$('#iot_message-3').messagedisplay({type:'yellow', message: "Yellow message", textheight: "20px", width: 'auto', status: true});
+$('#iot_message-4').messagedisplay({type:'green', message: "Green message", textheight: "30px", width: 'auto'});
+
+$("#chan1").click(function() {
+	$('#iot_message-1').messagedisplay('set', true);
+	$('#iot_message-2').messagedisplay('set', true);
+	$('#iot_message-3').messagedisplay('set', true);
+	$('#iot_message-4').messagedisplay('set', true);
+});
+
+$("#chan2").click(function() {
+	$('#iot_message-1').messagedisplay('set', false);
+	$('#iot_message-2').messagedisplay('set', false);
+	$('#iot_message-3').messagedisplay('set', false);
+	$('#iot_message-4').messagedisplay('set', false);
+});	
+</script>
+<!-- Message screen -->
+<div class="panel-outer">
+	<div class="panel-inner">
+		<h1 class="panel-header-raised blue">Message screen</h1>
+		<div class="panel-group">
+				<div id="iot_messagescreen-1"></div>
+		</div>
+	</div>
+</div>
+<script>
+var head = ['col1', 'col2', 'col3', 'col4'];
+var data = [];
+data[0] = ['row1/1', 'row1/2', 'row1/3', 'row1/4'];
+data[1] = ['row2/1', 'row2/2', 'row2/3', 'row2/4'];
+data[2] = ['row3/1', 'row3/2', 'row3/3', 'row3/4'];
+data[3] = ['row4/1', 'row4/2', 'row4/3', 'row4/4'];
+data[4] = ['row5/1', 'row5/2', 'row5/3', 'row5/4'];
+data[5] = ['row6/1', 'row6/2', 'row6/3', 'row6/4'];
+data[6] = ['row7/1', 'row7/2', 'row7/3', 'row7/4'];
+data[7] = ['row8/1', 'row8/2', 'row8/3', 'row8/4'];
+data[8] = ['row9/1', 'row9/2', 'row9/3', 'row9/4'];
+data[9] = ['row10/1', 'row10/2', 'row10/3', 'row10/4'];
+data[10] = ['row11/1', 'row11/2', 'row11/3', 'row11/4'];
+$('#iot_messagescreen-1').messagescreen({head: head, data: data, textheight: "10px", width: '300px', height: '150px', border: 0});
+</script>
+<!-- Sliders -->
+<div class="panel-outer">
+	<div class="panel-inner">
+		<h1 class="panel-header-raised blue">Horizontal ranged slider</h1>
+		<div class="panel-group">
+				<div id="slider1"></div>
+		</div>
+	</div>
+</div>
+<script>
+$( "#slider1" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+</script>
+<!-- Sliders -->
+<div class="panel-outer">
+	<div class="panel-inner">
+		<h1 class="panel-header-raised blue">Vertical ranged slider</h1>
+		<div class="panel-group">
+				<div id="slider2" style="height:250px;"></div>
+				<p>
+					<label for="amount">Slider value = :</label>
+					<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+				</p>
+		</div>
+	</div>
+</div>
+<script>
+$( "#slider2" ).slider({
+    orientation: "vertical",
+    range: true,
+    values: [ 17, 67 ],
+    slide: function( event, ui ) {
+        $( "#amount" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+    }
+});
+</script>
+<!-- Sliders -->
+<div class="panel-outer">
+	<div class="panel-inner">
+		<h1 class="panel-header-raised blue">Vertical slider (step 5)</h1>
+		<div class="panel-group">
+				<div id="slider3"></div>
+				<p>
+					<label for="amount1">Slider value = :</label>
+					<input type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold;">
+				</p>
+		</div>
+	</div>
+</div>
+<script>
+$( "#slider3" ).slider({
+	orientation: "vertical",
+    min: 0,
+    max: 255,
+    range: "min",
+	step: 5,
+    value: 127,
+    slide: function( event, ui ) {
+        $( "#amount1" ).val( ui.value );
+    }
+});
+</script>
+<!-- Menu -->
+<div class="panel-outer">
+	<div class="panel-inner">
+		<h1 class="panel-header-raised blue">Menu</h1>
+		<div class="panel-group">
+		
+				<ul id="menu" style="width: 150px;">
+					<li class="ui-widget-header"><div>Raspberry pi</div></li>
+					<li><div>io Config</div></li>
+					<li><div>Messages</div></li>
+					<li><div>Events</div></li>
+					<li><div>Timers</div>
+						<ul>
+							<li class="ui-state-disabled"><div>Home Entertainment</div></li>
+							<li><div>Car Hifi</div></li>
+							<li><div>Utilities</div></li>
+						</ul>
+					</li>
+					<li><div>Status</div></li>
+					<li><div>Menus</div>
+						<ul>
+							<li><div>Rock</div>
+								<ul>
+									<li><div>Alternative</div></li>
+									<li><div>Classic</div></li>
+								</ul>
+							</li>
+							<li><div>Jazz</div>
+								<ul>
+									<li><div>Freejazz</div></li>
+									<li><div>Big Band</div></li>
+									<li><div>Modern</div></li>
+								</ul>
+							</li>
+							<li><div>Pop</div></li>
+						</ul>
+					</li>
+					<li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+				</ul>
+		</div>
+	</div>
+</div>
+<script>
+$( "#menu" ).menu({
+      items: "> :not(.ui-widget-header)"
+    });
+<!-- 7seg Basic example -->
+</script>
+<div class="panel-outer">
+	<div class="panel-inner">
+	<h1 class="panel-header-raised blue">7seg Basic example</h1>
+		<div class="panel-group">
+			<div class="sevenseg-container bevel-down5">
+				<div id="exampleSingle1" class="big-sevenSeg float-left"></div>
+				<div id="exampleSingle2" class="big-sevenSeg float-left"></div>
+				<div id="exampleSingle3" class="big-sevenSeg float-left"></div>
+				<div id="exampleSingle4" class="big-sevenSeg float-left"></div>
+				<div id="exampleSingle5" class="big-sevenSeg float-left"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+$("#exampleSingle1").sevenSegDigit({ value: 1, colorOff: "#000032", colorOn: "Blue"  });
+$("#exampleSingle2").sevenSegDigit({ value: 2, colorOff: "#000032", colorOn: "Blue"  });
+$("#exampleSingle3").sevenSegDigit({ value: 3, colorOff: "#000032", colorOn: "Blue"  });
+$("#exampleSingle4").sevenSegDigit({ value: 4, colorOff: "#000032", colorOn: "Blue"  });
+$("#exampleSingle5").sevenSegDigit({ value: 5, colorOff: "#000032", colorOn: "Blue"  });
+</script>
+<!-- 7seg Array -->
+<div class="panel-outer">
+	<div class="panel-inner">
+	<h1 class="panel-header-raised blue">7seg Array</h1>
+		<div class="panel-group">
+			<div class="sevenseg-container bevel-down5">
+				<div id="exampleArray1" class="med-sevenSegArray5"></div>
+			</div>	
+		</div>
+	</div>
+</div>
+<script>
+$("#exampleArray1").sevenSeg({ digits: 5, value: 1234 });
+</script>
+<div class="panel-outer">
+	<div class="panel-inner">
+	<h1 class="panel-header-raised blue">7seg Array - Custom</h1>
+		<div class="panel-group">
+			<div class="sevenseg-container bevel-down5" style="background: blue;">
+				<div id="exampleArray2" class="med-sevenSegArray5"></div>
+			</div>	
+		</div>
+	</div>
+</div>
+<script>
+$("#exampleArray2").sevenSeg({ digits: 5, value: 12.345, colorOff: "#2f2fff", colorOn: "dfdfff", colorBackground: "#0000ff" });
+</script>
+<!-- qwerty Keyboard -->
+<div class="panel-outer" style="width: 900px; margin: 10px auto;">
+	<div class="panel-inner">
+	<h1 class="panel-header-raised blue">qwerty Keyboard</h1>
+		<div id="qwertyKeyboard1"></div>
+	</div>
+</div>
+<script>	
+$("#qwertyKeyboard1").qwertyKeyboard();
+</script>
+<!-- Hex Keyboard -->
+<div class="panel-outer" style="width: 370px; margin: 10px auto;">
+	<div class="panel-inner">
+	<h1 class="panel-header-raised blue">Hex Keyboard</h1>
+		<div id="hexKeyboard1"></div>
+	</div>
+</div>
+<script>	
+$("#hexKeyboard1").hexKeyboard();
+</script>
+<!-- Bool Keyboard -->
+<div class="panel-outer" style="width: 305px; margin: 10px auto;">
+	<div class="panel-inner">
+	<h1 class="panel-header-raised blue">Bool Keyboard</h1>
+		<div id="boolKeyboard1"></div>
+	</div>
+</div>
+<script>	
+$("#boolKeyboard1").boolKeyboard();
+</script>
+<!-- edit Keyboard -->
+<div class="panel-outer" style="width: 300px; margin: 10px auto;">
+	<div class="panel-inner">
+	<h1 class="panel-header-raised blue">Edit Keyboard</h1>
+		<div id="editKeyboard1"></div>
+	</div>
+</div>
+<script>	
+$("#editKeyboard1").editKeyboard();
+</script>
+</body>
+</html>
